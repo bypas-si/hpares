@@ -2453,6 +2453,14 @@
         <script src="../storage/js/theme.js"></script>
 
         <script>
+            var all = document.getElementsByTagName("a");
+            for(var i = 0, max = all.length; i < max; i++) 
+            {
+                all[i].target = "_self";
+            }
+        </script>
+
+        <script>
             function filterGames() {
                 const searchInput = document.getElementById('search').value.toLowerCase();
                 const buttons = document.querySelectorAll('.button h2');
